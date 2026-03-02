@@ -101,6 +101,7 @@ export default function ImageUploader({ onPrediction, onError, onLoadingChange }
         {
           headers: {
             'Content-Type': 'multipart/form-data',
+            'ngrok-skip-browser-warning': 'true',
           },
           timeout: 30000, // 30 วินาที
         }
