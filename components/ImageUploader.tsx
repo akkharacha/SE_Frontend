@@ -19,7 +19,7 @@ interface Props {
   onLoadingChange: (loading: boolean) => void
 }
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'
+const API_URL = process.env.NEXT_PUBLIC_API_URL!
 
 export default function ImageUploader({ onPrediction, onError, onLoadingChange }: Props) {
   const [dragActive, setDragActive] = useState(false)
